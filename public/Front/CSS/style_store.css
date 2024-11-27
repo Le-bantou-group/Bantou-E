@@ -1,0 +1,734 @@
+@font-face {
+    font-family: 'Baron Neue';
+    src: url('../font/baron-neue/Baron\ Neue.otf') format('opentype');
+    font-family: 'Ubuntu-Regular';
+    src: url('../font/ubuntu/Ubuntu-Regular.ttf');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu-Regular';
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Baron Neue';
+}
+
+main {
+    overflow: hidden;
+}
+
+footer #first-footer #second .about li {
+    margin-top: 10px;
+    margin-left: 2vw;
+}
+
+footer #first-footer #second .icon {
+    margin-top: 8%;
+}
+
+footer #first-footer #third form #email {
+    padding-top: 0;
+    margin: 0%;
+}
+
+
+/*Gallery*/
+
+
+/*Gallery*/
+
+#container-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin-left: 10vw;
+    overflow: hidden;
+}
+
+#container-gallery aside:nth-child(1) {
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+#container-gallery aside:nth-child(1) img {
+    border-radius: 12px;
+    height: 100%;
+}
+
+#container-gallery aside:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.gal2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    text-align: left;
+    align-items: first baseline;
+    margin-left: 20%;
+}
+
+.gal2 div h1 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.gal2 div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+}
+
+.gal2 div img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -200px 200px -10px #008cffa9;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: fixed url('../images/Image develppeur/Image develppeur/solar-panel-expelling-money.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.accueil h1 {
+    color: #fff;
+    margin-top: 15vh;
+}
+
+.accueil p {
+    color: #fff;
+    width: 30vw;
+    margin-top: 2%;
+    height: 20vh;
+}
+
+.store {
+    width: 96% !important;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.shop {
+    position: relative;
+    margin-top: 10px;
+}
+
+.entete-shop {
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding: 5vw;
+}
+
+.sub-header {
+    color: #fff;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.entete-shop div {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 2vw;
+}
+
+.entete-shop div .title-catalogue {
+    font-family: 'Baron Neue';
+    font-size: 3vw;
+    margin-right: 10vw;
+    margin-bottom: 2vw;
+    font-weight: bold;
+}
+
+.entete-shop div .prix {
+    font-family: 'Baron Neue';
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 2vw;
+}
+
+.entete-shop div p {
+    margin-left: 5vw;
+    text-align: justify;
+    width: 27vw;
+}
+
+#collect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection div {
+    width: 20%;
+    overflow: hidden;
+}
+
+.collection div img {
+    width: 100%;
+}
+
+.collection div img {
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+
+
+/*.carrousel*/
+
+.container-carrousel {
+    position: relative;
+    background: url('../images/Image develppeur/Image develppeur/font.jpg') scroll no-repeat -10px -150px;
+    background-size: cover;
+    margin: 0 1% 0 1%;
+    width: 98%;
+    height: 100vh;
+}
+
+.container-carrousel .item-mg {
+    width: 40%;
+    height: 66%;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 8%;
+    left: 29%;
+}
+
+.container-carrousel .item-mg.active {
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+.container-carrousel .item-mg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#target-containt div img {
+    width: 100%;
+    height: 50%;
+}
+
+#target-containt .contain1 form {
+    width: 100%;
+}
+
+#target-containt .contain1 form button {
+    width: 85%;
+    height: 3vw;
+    margin-left: 2vw;
+    border-radius: 12px;
+    padding: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fbc600;
+    background: transparent;
+    margin-top: 3vh;
+}
+
+#target-containt .contain1 form button:hover {
+    background: #fbc600;
+    color: #fff;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail {
+    position: absolute;
+    bottom: 34%;
+    left: 62%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 28%;
+    height: 30%;
+}
+
+.thumbnail .content-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.content-thumbnail .item {
+    width: 35%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+    top: 8%;
+    left: 65%;
+    z-index: 1;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.content-thumbnail .item.act {
+    z-index: 3;
+    animation: transition 1s ease-in-out forwards;
+}
+
+.content-thumbnail .item.back {
+    z-index: 3;
+    animation: transition 1s ease-in-out alternate-reverse;
+}
+
+.content-thumbnail .item::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #b0b0b061;
+}
+
+.thumbnail div .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail div .item .btn-animation {
+    position: absolute;
+    bottom: 40%;
+    width: 10px;
+    aspect-ratio: 1;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.thumbnail div .item .btn-animation:nth-child(1) {
+    left: 25%;
+    animation: jumping 1.5s ease-in-out infinite alternate;
+}
+
+.thumbnail div .item .btn-animation:nth-child(2) {
+    left: 50%;
+    animation: jumping 1.5s ease-in-out .9s infinite alternate;
+}
+
+.thumbnail div .item .btn-animation:nth-child(3) {
+    left: 75%;
+    animation: jumping 1.5s ease-in-out 1.5s infinite alternate;
+}
+
+@keyframes jumping {
+    to {
+        transform: translateY(-100%);
+    }
+    from {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes transition {
+    to {
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+/*Cadre img*/
+
+.tab-catalogue {
+    font-size: 2em;
+    z-index: 3;
+    margin-top: 10vh;
+    border-radius: 10px;
+    border: 2 solid #fff;
+    background: #008eed2c;
+    position: absolute;
+    left: 5%;
+    width: 15%;
+    padding: 2vw;
+    overflow: hidden;
+    color: #fff;
+}
+
+.tab-catalogue .price {
+    font-family: 'Baron Neue';
+    font-size: 1em;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.tab-catalogue .description {
+    font-family: 'Ubuntu-Medium';
+    font-size: medium;
+    margin-bottom: 2vh;
+}
+
+.tab-catalogue button {
+    font-size: medium;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    background: #000;
+}
+
+.tab-catalogue button:hover {
+    background: #fbc600;
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+
+
+/* nextPrevArrows */
+
+.nextPrevArrows {
+    position: absolute;
+    top: 90%;
+    right: -10%;
+    z-index: 100;
+    width: 300px;
+    max-width: 38%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nextPrevArrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #008eed2c;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nextPrevArrows button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*.recherche{}*/
+
+.store aside:nth-child(1) {
+    margin-right: 2%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 25vw;
+}
+
+.contain-search {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.contain-search form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-search form input:nth-child(1) {
+    border-radius: 14px;
+    padding: 10px;
+    margin-top: 3vh;
+}
+
+.store aside:nth-child(1) .contain-search form .send2 {
+    border-radius: 12px;
+    padding: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fbc600;
+    background: transparent;
+    margin-top: 3vh;
+}
+
+.store aside:nth-child(1) .contain-search form .send2:hover {
+    background: #fbc600;
+    color: #fff;
+}
+
+.contain-search form input:nth-child(1) {
+    width: 20vw;
+}
+
+.store aside:nth-child(1) .contain-search {
+    padding: 10px;
+}
+
+.store aside:nth-child(1) h1 {
+    text-align: left;
+    font-size: 3vw;
+    font-family: 'Baron Neue';
+}
+
+
+/*.store aside::after {
+    position: absolute;
+    bottom: 0;
+    right: 0vw;
+    content: "";
+    background: #fbc600;
+    width: 400px;
+    height: 300px;
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 20px 50px 11px 230px;
+    filter: blur(150px);
+    opacity: .6;
+}
+
+.store {
+    position: relative;
+}
+
+.store aside::before {
+    position: absolute;
+    content: "";
+    background: #fbc600;
+    width: 400px;
+    top: 0;
+    height: 300px;
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 20px 50px 11px 230px;
+    filter: blur(150px);
+    opacity: .6;
+}
+*/
+
+.store aside:nth-child(2) div {
+    overflow: hidden;
+    background: transparent;
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    text-align: center;
+}
+
+.store aside div img:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.store div img {
+    width: 10%;
+    height: 50%;
+    border-radius: 2%;
+    aspect-ratio: 1;
+}
+
+.store aside div p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.store aside div h1 {
+    margin-top: 15px;
+}
+
+.store aside div a {
+    width: 90%;
+    margin-top: 5%;
+    color: #343434bf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Ubuntu-Medium';
+    border: 1px solid #fbc600;
+    padding: 8px 10px;
+    text-transform: 0.3s;
+}
+
+.store aside div a:hover {
+    background: #fbc600;
+    color: #fff;
+}
+
+.container {
+    background: #ffffff18;
+    backdrop-filter: blur(20px);
+}
+
+#backup {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.store-title {
+    width: 99vw;
+    margin-bottom: -5vh;
+    text-align: center;
+}
+
+.shop_cart {
+    display: none;
+}
+
+.container {
+    background: #a9a8a83a;
+    backdrop-filter: blur('15px');
+}
+
+@media (max-width:1000px) {
+    #toggle-btn {
+        display: block;
+        z-index: 1;
+        top: 4vh;
+        right: 2vw;
+        width: 10%;
+        position: absolute;
+    }
+    .menu {
+        width: 100%;
+        height: 50vh;
+    }
+    .menu li a {
+        font-size: 1re;
+    }
+    .menu li a:hover {
+        color: rgb(4, 62, 149);
+    }
+    .btn_icon {
+        display: none;
+    }
+    .shop_cart {
+        display: block;
+    }
+    .logo {
+        top: 0%;
+        left: 0%;
+    }
+    .accueil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .accueil h1 {
+        margin-left: 10vw;
+        font-size: 5vw;
+    }
+    .accueil p {
+        margin-left: 20vw;
+        width: 50%;
+        text-align: justify;
+        font-size: 3vw;
+    }
+    .container-carrousel .item-mg {
+        height: 45%;
+        width: 40%;
+        top: 25%;
+        left: 30%;
+    }
+    .container-carrousel .thumbnail {
+        width: 35%;
+        bottom: 30%;
+        right: 10%;
+    }
+    .tab-catalogue {
+        display: none;
+    }
+    .tab-catalogue .description {
+        display: none;
+    }
+    .tab-catalogue button {
+        padding: 0;
+        padding: .5vh;
+    }
+    .nextPrevArrows {
+        top: 70%;
+        right: -20vw;
+    }
+    .nextPrevArrows button {
+        width: 2rem;
+        aspect-ratio: 1;
+    }
+    .store aside:nth-child(1) {
+        width: 30vw;
+    }
+    #target-containt div {
+        height: 100%;
+        width: 100%;
+    }
+    #target-containt div img {
+        height: 30%;
+    }
+}
+
+
+}
+
+}

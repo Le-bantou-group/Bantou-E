@@ -1,0 +1,140 @@
+footer section aside {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.about {
+    margin-top: 16%;
+    margin-left: -12vh;
+    text-align: center;
+    list-style: none;
+}
+
+.about li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon ul {
+    display: flex;
+    list-style: none;
+}
+
+.icon ul li i {
+    text-align: left;
+    font-size: 25px;
+    aspect-ratio: 1;
+}
+
+.icon ul li i:hover {
+    color: #fbc600;
+    transform: scale(1.1);
+}
+
+#sub {
+    position: absolute;
+    top: 58%;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.submenu {
+    font-family: 'Baron Neue', sans-serif;
+    display: flex;
+    margin-left: 22vw;
+    margin-bottom: -5px;
+    justify-content: left;
+    flex-direction: row;
+    list-style: none;
+}
+
+.submenu li a {
+    font-family: 'Baron Neue', sans-serif;
+    margin-left: 1vw;
+    font-size: medium;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    border-top: 1px solid #fbc600;
+    border-bottom: 1px solid #fbc600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 80ms;
+}
+
+.submenu li :active {
+    padding: 18px 0 18px 0;
+    border: 1px solid #fff700;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) -50%, rgba(255, 255, 255, 0.231) 90%);
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+}
+
+.header-footer {
+    text-align: justify;
+}
+
+
+/*
+summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+summary::after {
+    font-weight: 800;
+    content: '+';
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+details ul {
+    padding-top: 5px;
+    border-top: 1px solid #fff;
+}
+*/
+
+.menu-site {
+    list-style: none;
+}
+
+.menu-site li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-site li a:hover {
+    transition: 50ms;
+    transform: scale(1.1);
+}
+
+.chart {
+    margin-top: 2vh;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chart img {
+    margin-right: 4vw;
+    width: 100px;
+}
+
+@media (max-width:600px) {
+    #first {
+        margin-left: 30px;
+    }
+    .submenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer form {
+        display: none;
+    }
+}

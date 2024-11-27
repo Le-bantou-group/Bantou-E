@@ -1,0 +1,267 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu-Medium';
+}
+
+body {
+    height: 100%;
+    background-image: url('../images/Image develppeur/Image develppeur/font1.jpg') fixed no-repeat center;
+    background-size: cover;
+}
+
+.boule {
+    z-index: 999;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    filter: blur(25px);
+    width: 10vw;
+    aspect-ratio: 1;
+    border: 0;
+    background: #fbc600;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    width: 18re;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    /* position: absolute; */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar {
+    margin-bottom: 20px;
+    background: #FFF;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #008eed;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.input-group label i {
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    width: 100%;
+}
+
+.options .remember-me input {
+    margin-right: 5px;
+}
+
+.options a {
+    text-decoration: none;
+    text-transform: lowercase !important;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 5%;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.login-button {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #008eed;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background: #fbc600;
+}
+
+
+/* CSS Global Styles (ajouté au code CSS précédent) */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-text {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-text a {
+    color: #008eed;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styles pour le formulaire d'inscription */
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sign-up-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.input-group label i {
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+}
+
+.input-group input[type="file"] {
+    display: none;
+    /* Masquer l'input pour personnaliser l'apparence */
+}
+
+.input-group label[for="avatar"] {
+    position: relative;
+    cursor: pointer;
+}
+
+.input-group label[for="avatar"]::after {
+    content: "Choose Avatar";
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #008eed;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background: #fbc600;
+}
+
+
+/* Footer texte de lien */
+
+.footer-text {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-text a {
+    color: #008eed;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: url('../images/Image develppeur/Image develppeur/tg_image_3179240451.png');
+    margin-bottom: -10vh;
+}
+
+header {
+    z-index: 3;
+    position: absolute;
+}
+
+.header-shop {
+    padding-top: 40vh;
+    backdrop-filter: blur(10px);
+    background: url('../images/Image develppeur/Image develppeur/font3.jpg') scroll no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-shop .product {
+    width: 50%;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-shop .product img {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.header-shop aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-shop aside:nth-child(1) {
+    margin-left: 9%;
+}
+
+.header-shop aside form {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.header-shop aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-shop aside form #number {
+    text-align: center;
+    border-radius: 5px;
+    width: 70%;
+    height: 30px;
+}
+
+.header-shop aside form .send {
+    background: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 70%;
+    height: 30px;
+}
+
+.header-shop aside form .send:hover {
+    transform: scale(1.05);
+    transition: 80ms ease;
+    background: #fbc600;
+}
+
+.testimonial-section,
+.rating-section {
+    margin-bottom: 50px;
+}
+
+.rating-section h2 {
+    padding-top: 3%;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #bebaba;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* Style de base pour les étoiles */
+
+.rating {
+    display: inline-block;
+    font-size: 24px;
+    color: #fbc600;
+    ;
+    cursor: pointer;
+}
+
+.rating .star {
+    color: #fbc600;
+    ;
+    transition: color 0.3s ease;
+}
+
+
+/* Au hover, les étoiles deviennent dorées */
+
+.rating .star:hover,
+.rating .star:hover~.star {
+    color: #fbc600;
+    ;
+}
+
+
+/* Lorsque les étoiles sont cliquées, elles restent dorées */
+
+.rating .star.active,
+.rating .star.active~.star {
+    color: #fbc600;
+    ;
+}
+
+.rating-section {
+    text-align: center;
+}
+
+.rating-form {
+    backdrop-filter: blur(10px);
+    background-color: #ffffff1c;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+.stars {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.stars .star {
+    color: #ddd;
+    /* grey color for unselected stars */
+}
+
+.stars .star:hover,
+.stars .star.active {
+    color: #fbc600;
+    ;
+    /* gold for active stars */
+}
+
+#submit-rating {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-rating:hover {
+    background-color: #218838;
+}
+
+.catalogue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogue-mg {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#cart::before {
+    content: '';
+    width: 100px;
+    color: #000;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #fbc600;
+}
+
+.catalogue-mg div {
+    width: 30%;
+    aspect-ratio: 1;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogue-mg div h1 {
+    font-size: 1em;
+    z-index: 2;
+}
+
+.catalogue-mg div img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.catalogue-mg div img:hover {
+    z-index: 8;
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+
+.image-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    background: #000;
+}
+
+.image-section .item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100px;
+}
+
+.image-section .item img {
+    width: 100%;
+    height: 100%;
+}

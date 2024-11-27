@@ -1,0 +1,350 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    font-family: 'Baron Neue';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header-views {
+    color: #fff;
+    background: linear-gradient(-60deg, #008eed 65%, #54D7ff, #9bffff);
+    font-family: 'Baron Neue';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-views::before {
+    content: '';
+    width: 100px;
+    filter: blur(25px);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: #fbc600;
+}
+
+.header-views div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-align: justify;
+    font-family: 'Ubuntu-Medium';
+    width: 30vw;
+}
+
+
+/*Description de la vue*/
+
+.contain {
+    width: 100%;
+    padding: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contain aside:nth-child(1) {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contain aside:nth-child(1) h1 {
+    width: 70%;
+    text-align: left;
+    font-size: 3.5em;
+    font-family: 'Baron Neue';
+}
+
+.contain aside:nth-child(1) p {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-family: 'Ubuntu-Medium';
+}
+
+.contain aside:nth-child(1) button {
+    height: 30px;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background: #008eed;
+}
+
+.contain aside:nth-child(1) button:hover {
+    background: #54D7ff;
+}
+
+.contain aside:nth-child(2) {
+    width: 40vw;
+}
+
+.contain aside:nth-child(2) div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contain aside:nth-child(2) div img {
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+/*Banner*/
+
+#carousel {
+    background: url("../images/Image develppeur/Image develppeur/fond1.jpg")scroll no-repeat center;
+    background-size: cover;
+    display: flex;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-contain h1 {
+    width: 50%;
+}
+
+.text-contain p {
+    text-align: justify;
+}
+
+#carousel .flou {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+    background: #ffffff3b;
+    backdrop-filter: blur(15px);
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.carousel {
+    animation: carousel 40s ease-in-out infinite forwards;
+}
+
+@keyframes carousel {
+    0% {
+        background: url('../images/Carousel/audits1.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    10% {
+        background: url('../images/Carousel/audits1.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    20% {
+        background: url('../images/Carousel/modelisation.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    30% {
+        background: url('../images/Carousel/modelisation.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    40% {
+        background: url('../images/Carousel/conception.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background: url('../images/Carousel/conception.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    60% {
+        background: url('../images/Carousel/img4.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    70% {
+        background: url('../images/Carousel/img4.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    80% {
+        background: url('../images/Carousel/vente.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    90% {
+        background: url('../images/Carousel/vente.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background: url('../images/Carousel/formation.jpg')scroll center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/*
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.carousel {
+    width: 300px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+*/
+
+.carousel {
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+    transition: 1s ease;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 75vh;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/*Banner*/
+
+#banner {
+    padding-top: 5vh;
+    color: #fff;
+    width: 99vw;
+    border-radius: 20px;
+    height: 52vh;
+    background: #008eed;
+}
+
+#banner .container {
+    background: url('../images/IMG_1944.jpeg') scroll no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width:600px) {
+    #toggle-btn {
+        display: block;
+        z-index: 1;
+        top: 4vh;
+        right: 2vw;
+        width: 10%;
+        position: absolute;
+    }
+    .btn_icon {
+        display: none;
+    }
+    .menu {
+        width: 100%;
+        height: 50vh;
+    }
+    .menu li a {
+        font-size: 1.2vw;
+    }
+    .menu li a:hover {
+        color: rgb(4, 62, 149);
+    }
+    .logo {
+        top: 0%;
+        left: 0%;
+    }
+    .header-views {
+        height: 80vh;
+    }
+    .header-views h1 {
+        font-size: 5vw;
+        margin-bottom: 2vh;
+    }
+    .header-views div a {
+        font-size: 3vw;
+    }
+    .contain {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contain aside:nth-child(2) div {
+        width: 85vw;
+    }
+    .contain aside:nth-child(1) {
+        width: 100vw;
+    }
+    .contain aside:nth-child(1) h1 {
+        width: 50%;
+        margin-bottom: 1vh;
+    }
+    .contain aside:nth-child(1) p {
+        margin-bottom: 1vh;
+    }
+    .carousel-item {
+        height: 50%;
+    }
+}

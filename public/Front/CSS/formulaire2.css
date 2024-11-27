@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Baron Neue';
+    src: url('../font/baron-neue/Baron\ Neue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../font/ubuntu/Ubuntu-MediumItalic.ttf') format('opentype');
+}
+
+* {
+    font-family: 'Ubuntu-Regular';
+    margin: 0%;
+    padding: 0%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Baron Neue';
+}
+
+#backup {
+    background: url('../images/Image develppeur/Image develppeur/solar-panels-futuristic-lunar-base-harnessing-renewable-energy.jpg') fixed no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-from aside {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 5vh;
+    justify-content: center;
+    align-items: center;
+    background: #b4b4b42e;
+    backdrop-filter: blur(15px);
+}
+
+.image-section {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+#backup h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-container form label {
+    display: block;
+    color: #dddddd5b;
+}
+
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #008cffa9;
+    background-color: transparent;
+    color: #2f2e2e82;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container form #country {
+    position: absolute;
+    width: 5%;
+    padding: 12px;
+}
+
+.form-container form #phone {
+    width: 70%;
+    margin-left: 20%;
+}
+
+.form-container form button:hover {
+    transition: 1s ease;
+    background-color: #008cffa9;
+    color: #fff;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#submitButton {
+    width: 30% !important;
+}

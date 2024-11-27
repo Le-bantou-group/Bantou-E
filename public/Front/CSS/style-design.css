@@ -1,0 +1,180 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    @font-face {
+        font-family: 'Baron Neue';
+        src: url('../font/baron-neue/Baron\ Neue.otf');
+    }
+    
+    @font-face {
+        font-family: 'Ubuntu';
+        src: url('../font/ubuntu/Ubuntu-BoldItalic.ttf');
+    }
+    
+     :root {
+        --huge: 6.5rem;
+        --x-large: 4rem;
+        --large: 2.5rem;
+        --medium: 2rem;
+        --small: 1.5rem;
+        --x-small: 1.1rem;
+        --tiny: .8rem;
+    }
+    
+    .btn-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .bg-svg {
+        position: absolute;
+        top: -10vh;
+        left: -14vw;
+        z-index: -1;
+        transform: rotate(10deg) rotateX(180deg);
+    }
+    
+    .bg-svg img {
+        width: 120vw;
+    }
+    
+    .section-1 {
+        background-image: radial-gradient(circle, #fff 2px, rgba(0, 0, 0, 0) 5px);
+        height: 100%;
+        background-size: 100px 100px;
+    }
+    
+    .text-contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .txt-1 {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: right;
+    }
+    
+    .txt-1 h1 {
+        font-size: var(--huge);
+        background-image: linear-gradient(120deg, #fac384, white);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .txt-1 button {
+        text-align: right;
+    }
+    
+    .txt-2 {
+        width: 300px;
+        align-self: flex-end;
+        font-size: var(--small);
+        line-height: 1.4;
+    }
+    
+    .slider-container {
+        position: relative;
+        height: 6.5rem;
+        overflow: hidden;
+        min-width: 500px;
+    }
+    
+    .slider-container .sd-contain {
+        position: absolute;
+        top: 100%;
+        right: 0vw;
+        font-size: var(--huge);
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        animation: translate 4s ease-in-out infinite backwards;
+    }
+    
+    @keyframes translate {
+        0% {
+            top: 100%;
+        }
+        25% {
+            top: 0%;
+        }
+        50% {
+            top: -130%;
+        }
+        75% {
+            top: -250%;
+        }
+        100% {
+            top: -380%;
+        }
+    }
+    
+    .slider-container .sd-contain div {
+        text-align: right;
+    }
+    
+    .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        line-height: 1.3;
+    }
+    
+    .hedadline {
+        font-size: var(--medium);
+        width: 900px;
+    }
+    
+    .headline span {
+        font-weight: bold;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        place-items: center;
+    }
+    
+    .card {
+        background: rgba(255, 255, 255, .1);
+        padding: 2rem;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        border-radius: 5px;
+        backdrop-filter: blur(15px);
+    }
+    
+    .card .icon {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        width: 50px;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon i {
+        margin: auto;
+        font-size: var(--x-small);
+    }
+    
+    .title {
+        font-size: var(--small);
+        font-weight: bold;
+        max-width: 200px;
+    }
+    
+    desc {
+        font-size: var(--x-small);
+    }

@@ -1,0 +1,229 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Baron Neue';
+    src: url('../font/baron-neue/Baron\ Neue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('../font/ubuntu/Ubuntu-Medium.ttf') format('opentype');
+}
+
+* {
+    font-family: 'Baron Neue';
+}
+
+* {
+    font-size: 2.6vh;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: .5vh;
+    font-size: 5vh;
+}
+
+#toggle-btn {
+    display: none;
+}
+
+header {
+    font-family: 'Baron Neue', sans-serif;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+header nav {
+    background: #ffffff18;
+    backdrop-filter: blur(20px);
+    width: 100vw;
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    padding-top: 1vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.btn_icon {
+    margin-right: 4vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_icon div {
+    margin-top: -2vh;
+}
+
+.btn_icon div:nth-child(1) {
+    margin-right: 3vh;
+}
+
+.btn_icon div:nth-child(1) a img {
+    width: 3vw;
+}
+
+.btn_icon div:nth-child(2) a img {
+    width: 2vw;
+}
+
+.menu li a {
+    margin-right: 3vw;
+    font-family: 'Baron Neue';
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid #fbc600;
+    border-top: 2px solid #fbc600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* Effet lumineux intérieur */
+    transform: scale(1.1);
+    transition: 1s;
+    /* Légère augmentation de la taille */
+}
+
+.logo img {
+    margin-left: 6vw;
+    height: 70px;
+}
+
+.menu li a:active {
+    padding: 15px;
+    border: 1px solid #fbc600;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) -50%, rgba(255, 255, 255, 0.231) 90%);
+}
+
+@media (max-width: 600px) {
+    * {
+        font-family: 'Baron Neue', sans-serif;
+        margin: 0%;
+        padding: 0%;
+    }
+    #toggle-btn {
+        position: absolute;
+        cursor: pointer;
+        width: 34px;
+        aspect-ratio: 1;
+        margin-left: 90vw;
+        display: block;
+    }
+    .logo {
+        position: fixed;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #menu {
+        display: flex;
+        margin-top: 10vw;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        background: #009dff62;
+    }
+    #menu li a {
+        font-size: large;
+        width: 100vw;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+
+
+/*Drapeau*/
+
+.custom-select-container {
+    position: relative;
+    top: .8vh;
+    width: 8vw;
+    border: none;
+}
+
+.custom-select {
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    /* padding: 10px; */
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.selected-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selected-option .flag {
+    width: 70%;
+    height: auto;
+}
+
+.selected-option .acronym {
+    font-size: 1.2vw;
+    color: white;
+    text-transform: uppercase;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.option .flag {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.option .acronym {
+    font-size: 16px;
+    color: yellow;
+}
+
+.custom-select:hover .select-options {
+    display: block;
+}

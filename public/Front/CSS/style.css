@@ -1,0 +1,498 @@
+@font-face {
+    font-family: 'Baron Neue';
+    src: url('../font/baron-neue/Baron\ Neue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('../font/ubuntu/Ubuntu-Medium.ttf') format('opentype');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu-Medium';
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Baron Neue';
+}
+
+ :root {
+    scroll-behavior: smooth;
+    counter-reset: heading;
+}
+
+.print {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*Effect en vague*/
+
+.vague-container {
+    width: 100%;
+    position: absolute;
+    /* Hauteur totale des vagues */
+    overflow: hidden;
+}
+
+.vague {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    width: 200%;
+    /* Largeur de la vague */
+    height: 100px;
+    /* Hauteur de la vague */
+    border-radius: 50%;
+    /* Forme ronde */
+    border: 1px solid #fbc600;
+    /* Couleur de la bordure */
+    transform: translateX(-50%);
+    transform: rotate('-45deg');
+    animation: wave 2s linear infinite;
+    opacity: 0.7;
+    /* Opacité de la bordure */
+}
+
+
+/* Styles pour plusieurs vagues */
+
+.wave:nth-child(1) {
+    animation-delay: 0s;
+    opacity: 0.6;
+    z-index: 1;
+    /* Éléments en bas */
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.5s;
+    opacity: 0.5;
+    height: 80px;
+    z-index: 2;
+    /* Éléments au-dessus */
+}
+
+.wave:nth-child(3) {
+    animation-delay: 1s;
+    opacity: 0.4;
+    height: 60px;
+    z-index: 3;
+    /* Éléments en haut */
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.print aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10pt;
+    height: fit-content;
+}
+
+section aside .title {
+    counter-increment: heading;
+}
+
+section aside .title div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title::before {
+    position: relative;
+    left: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(100px, 12vw, 15rem);
+    font-size: clamp(20px, 22vw, 60px);
+    font-weight: 800;
+    aspect-ratio: 1;
+    background: #fff;
+    color: #008eef;
+    border-radius: 100%;
+    content: counter(heading);
+}
+
+.title div h2 {
+    text-align: left;
+}
+
+
+/*.ind_1 {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}*/
+
+.print1 .title {
+    width: 40vw;
+}
+
+.print1 .title h2 {
+    font-family: 'Baron Neue';
+    text-align: right;
+}
+
+.print1 {
+    color: #fff;
+}
+
+.print1 p {
+    text-align: justify;
+}
+
+.print2 {
+    color: #fff;
+    background-image: transparent;
+}
+
+.print2 p {
+    text-align: justify;
+}
+
+.print2 .title {
+    text-align: left;
+    width: 40vw;
+}
+
+.print2 .title::before {
+    font-size: 7vw;
+    color: #54D7ff;
+}
+
+.print1 .title::before {
+    position: relative;
+    font-size: 7vw;
+    top: 40px;
+    left: -30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    font-weight: 800;
+    aspect-ratio: 1;
+    background: #fff;
+    color: #008eed;
+    border-radius: 100%;
+    content: counter(heading);
+}
+
+.print2 .contain2 {
+    margin-top: 20vh;
+    margin-left: 53%;
+    padding-top: 2vh;
+    width: 26vh;
+    height: 26vh;
+    text-align: center;
+    color: #54D7ff;
+    background: #fff;
+    border-radius: 140px;
+}
+
+.print3 {
+    color: #fff;
+}
+
+.print3 p {
+    text-align: justify;
+}
+
+.print3 .title {
+    width: 40vw;
+}
+
+.print3 .title::before {
+    font-size: 7vw;
+    color: #9bffff;
+}
+
+.print div .contain {
+    width: 100px;
+    aspect-ratio: 1;
+    color: #008eed;
+    font-weight: 400;
+    font-size: clamp(12, 10vh, 20px);
+    background: #fff;
+}
+
+
+/*Logo le bantou*/
+
+.logo-bantou {
+    list-style: none;
+    display: flex;
+}
+
+.logo-bantou img {
+    height: 50px;
+}
+
+.print4 {
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.print4 h1 {
+    margin-top: 21%;
+    margin-bottom: 2%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.print4 div {
+    width: 100vw;
+    height: 0.01px;
+    border-radius: 100%;
+    background: #000;
+}
+
+.print4 img {
+    margin-left: 1.8%;
+    width: 95%;
+}
+
+.print4 span {
+    position: absolute;
+    margin-left: 05%;
+    border-radius: 20px;
+    color: #fff;
+    background: #ffffff5c;
+    padding: 20px 10px 20px 20px;
+    backdrop-filter: blur(15px);
+}
+
+.print4 .list-country {
+    color: #fff;
+}
+
+.print4 span i {
+    font-size: 1.8vw;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.print {
+    background-image: linear-gradient(-120deg, #008eed 20%, #54D7ff, #9bffff);
+}
+
+.commentaire {
+    height: 50vh;
+    width: 100vw;
+}
+
+.planete {
+    position: relative;
+    width: 100%;
+}
+
+.planete h1 {
+    text-align: center;
+    width: 100vw;
+}
+
+.planete .print4 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.planete .print4 span p {
+    font-size: 1.8vw;
+    margin-right: 1.5vw;
+}
+
+.planete .print4 .pointer {
+    color: #fbc600;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: jump 1s ease infinite alternate;
+}
+
+@keyframes jump {
+    to {
+        transform: translateY(10px);
+    }
+    from {
+        transform: translateY(0px);
+    }
+}
+
+.planete .print4 .pointer:nth-child(1) {
+    top: 14vw;
+    color: #fbc600;
+    left: 46.7vw;
+    font-size: 2em;
+}
+
+.planete .print4 .pointer:nth-child(2) {
+    font-size: 2em;
+    top: 25vw;
+    left: 48.5vw;
+}
+
+.planete .print4 .pointer:nth-child(3) {
+    font-size: 2em;
+    top: 15vw;
+    left: 49vw;
+}
+
+#print4 {
+    top: 5vh;
+    position: relative;
+}
+
+.planisphere {
+    border-radius: 20px;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: -5vh;
+}
+
+.print4 {
+    position: relative;
+}
+
+@media (max-width:860px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-size: x-small;
+    }
+    .logo {
+        top: 0%;
+        left: 0%;
+    }
+    .menu li a {
+        font-size: x-small;
+    }
+    .menu li a:hover {
+        font-size: x-small;
+        color: rgb(0, 38, 97);
+    }
+    .print div .contain {
+        width: 20px;
+        height: 10px;
+        margin-top: 35vh;
+        margin-left: 15vw;
+    }
+    .print2 .contain2 {
+        width: 120px;
+        height: 100px;
+    }
+    .print4 {
+        margin-top: -4vh;
+    }
+    .print4 h1 {
+        margin-top: 0;
+        font-size: large;
+    }
+    .print4 div {
+        height: 0.1px;
+        aspect-ratio: 1;
+    }
+}
+
+@media(max-width:400px) {
+    .print4 {
+        margin-top: -30vh!important;
+    }
+}
+
+
+/*Diapo des logo*/
+
+.diaporama {
+    position: relative;
+    backdrop-filter: blur(20px);
+    width: 70%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.diaporama-container .item {
+    flex: 0 0 auto;
+    /* Les éléments gardent leur taille */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* Espace entre les images */
+    width: 10em;
+}
+
+.diaporama img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.diaporama-container {
+    display: flex;
+    white-space: nowrap;
+    /* Les éléments restent en ligne */
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    width: 99%;
+    height: 200px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.button {
+    opacity: 0;
+}
+
+
+/*diaporama*/
+
+.sld {
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100vw;
+    height: 80vh;
+    border-radius: 20px;
+    background: url('../images/Image develppeur/Image develppeur/sun_rays_breaking_through_dark_storm_clouds_ocean_dramatic_weather.jpg') scroll no-repeat center;
+    background-size: cover;
+}
+
+.sld h1 {
+    color: white;
+    margin-bottom: 5vh;
+}

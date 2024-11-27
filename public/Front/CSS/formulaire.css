@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Baron Neue';
+    src: url('../font/baron-neue/Baron\ Neue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../font/ubuntu/Ubuntu-MediumItalic.ttf') format('opentype');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu-Regular';
+}
+
+.form-container h1,
+.form-container h2,
+.form-container h3 {
+    font-family: 'Baron Neue';
+}
+
+#backup {
+    background: url('../images/Image develppeur/Image develppeur/solar-energypowered-gadgets.jpg') fixed no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background: #ffffff18;
+    backdrop-filter: blur(20px);
+    padding: 3vh;
+}
+
+.form-container h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    text-transform: uppercase;
+    margin: 10px auto;
+    font-size: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.image-section {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.form-group {
+    padding: 2vw;
+}
+
+.form-container .fullname {
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+    width: 50vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group #email {
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group #country {
+    position: absolute;
+}
+
+.form-group #phone {
+    margin-left: 20%;
+    width: 80%;
+}
+
+.form-container .label2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#country {
+    width: 15%;
+    text-transform: capitalize;
+}
+
+.form-container textarea {
+    resize: vertical;
+    height: 10vh;
+}
+
+.form-container #submitButton {
+    background: transparent;
+    border: 1px solid #007BFF;
+    color: #3331319a;
+    border: none;
+    width: 20%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form-container #submitButton:hover {
+    background-color: #007BFF;
+    color: #fff;
+}

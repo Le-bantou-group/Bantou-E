@@ -1,0 +1,205 @@
+.contain-hidd_menu {
+    display: none;
+}
+
+#espace_panier {
+    display: none;
+}
+
+#croix {
+    display: none;
+}
+
+.user {
+    color: transparent;
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+    clip-path: circle(28% at 10% 50%);
+}
+
+.user img {
+    clip-path: circle(75%);
+}
+
+.user:hover {
+    background: #fbc600;
+    clip-path: circle(75%);
+    transition: clip-path 1s ease;
+}
+
+
+/*@media (min-width:700px) and (max-width:1000px) {
+    #espace_panier {
+        display: block;
+    }
+    .btn_icon {
+        display: none;
+        justify-content: right;
+    }
+    #cart {
+        display: none;
+    }
+    .logo {
+        margin-top: 3%;
+        position: absolute;
+        left: 0%;
+        background: transparent;
+        height: 8vh;
+    }
+    .logo img {
+        height: 100%
+    }
+    .contain-hidd_menu {
+        position: absolute;
+        background: transparent;
+        display: flex;
+        right: 0px;
+        flex-direction: row !important;
+        justify-content: left;
+        height: fit-content;
+        width: 30%;
+    }
+    .contain-hidd_menu i {
+        margin-left: 1rem;
+        font-size: 2rem !important;
+    }
+    .contain-hidd_menu img {
+        width: 100%;
+        height: 100%;
+    }
+    .custom-select-container {
+        width: 30%;
+        background: transparent;
+        margin-right: -2vw;
+        margin-bottom: -1.5vh
+    }
+    #menu {
+        width: 100vw;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        z-index: 99;
+    }
+    #menu li {
+        font-size: 20px !important;
+    }
+    #croix {
+        transition: all 1s ease-in-out;
+        z-index: 99;
+        font-size: 1.5rem;
+        margin-top: 4%;
+        display: none;
+    }
+    #toggle-btn {
+        transition: all 1s ease-in-out;
+        z-index: 99;
+        font-size: 1.5rem;
+        margin-top: 4%;
+        display: block;
+    }
+    #menu {
+        height: 100vh;
+        position: absolute;
+        top: -30px;
+        display: none;
+        z-index: 99;
+        background: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(15px);
+        color: #fff;
+        padding-bottom: 10vh;
+    }
+    .select-options {
+        width: 30vw
+    }
+    #menu li {
+        color: #fff;
+        margin-top: 10vh;
+    }
+    #menu li a:hover {
+        color: #fff !important;
+    }
+}
+
+@media(max-width:700px) {
+    #espace_panier {
+        display: block;
+    }
+    .btn_icon {
+        display: none;
+        justify-content: right;
+    }
+    #cart {
+        display: none;
+    }
+    .logo {
+        margin-top: 3%;
+        position: absolute;
+        left: -8%;
+        background: transparent;
+        height: 8vh;
+    }
+    .logo img {
+        height: 100%
+    }
+    .contain-hidd_menu {
+        margin-left: 52%;
+        width: 30%;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .contain-hidd_menu i {
+        font-size: 1.6rem;
+    }
+    .custom-select-container {
+        width: 40%;
+        background: transparent;
+        margin-right: -2vw;
+        margin-bottom: -1.5vh
+    }
+    #menu {
+        z-index: 99;
+    }
+    #croix {
+        transition: all 1s ease-in-out;
+        z-index: 99;
+        position: absolute;
+        font-size: 1.5rem;
+        margin-top: 4%;
+        right: 8%;
+        display: none;
+    }
+    #toggle-btn {
+        transition: all 1s ease-in-out;
+        margin: 2% 0 0 0 !important;
+        z-index: 99;
+        font-size: 1.5rem;
+        margin-top: 4% !important;
+        right: 5% !important;
+        display: block;
+    }
+    #menu {
+        height: 100vh;
+        position: absolute;
+        top: -30px;
+        display: none;
+        z-index: 99;
+        background: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(15px);
+        color: #fff;
+        padding-bottom: 10vh;
+    }
+    .select-options {
+        width: 30vw
+    }
+    #menu li {
+        color: #fff;
+        margin-top: 10vh;
+    }
+    #menu li a:hover {
+        color: #fff !important;
+    }
+}
+    */
