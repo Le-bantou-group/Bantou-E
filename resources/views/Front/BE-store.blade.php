@@ -20,6 +20,12 @@
 
     <title>BE_store</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         .contain-hidd_menu {
             display: none;
         }
@@ -1656,10 +1662,10 @@
                                         </div>
                                         <p>${product.description}</p>
                                         <h2>${product.prix}</h2>
-                                        <button class="add-to-cart-btn btn_re" 
-                                            data-id="${product.id}" 
-                                            data-name="${product.nom}" 
-                                            data-price="${product.prix}" 
+                                        <button class="add-to-cart-btn btn_re"
+                                            data-id="${product.id}"
+                                            data-name="${product.nom}"
+                                            data-price="${product.prix}"
                                             data-image="${product.image}">
                                             Ajouter
                                         </button>
@@ -1742,7 +1748,7 @@
                         $.each(cartItems, function(id, details) {
                             cartHtml += `
                     <li>
-                        <article> 
+                        <article>
                             <img src="/storage/${details.image}" alt="">
                             <div class="detail">
                                 <h1 style='font-size:1.2vw;'>${details.nom}</h1>
@@ -1751,7 +1757,7 @@
                         </article>
                         <input type="number" class="numtext"  disabled value="${details.quantity}">
                         <button onclick="removeItem(${id})" style="color:#fff;" class="rmb"><i class="fa-solid fa-trash"></i></button>
-                    
+
                     </li>
                     <hr>`;
 
@@ -1828,7 +1834,7 @@
                                 $.each(cartItems, function(id, details) {
                                     cartHtml += `
                         <li>
-                            <article> 
+                            <article>
                                 <img src="/storage/${details.image}" alt="${details.nom}">
                                 <div class="detail">
                                     <h1 style='font-size:1.2vw;'>${details.nom}</h1>

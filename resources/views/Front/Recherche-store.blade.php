@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="Front/CSS/style_store.css">
     <title>BE_store</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         .contain-hidd_menu {
             display: none;
         }
@@ -1265,7 +1271,7 @@
                         $.each(cartItems, function(id, details) {
                             cartHtml += `
                     <li>
-                        <article> 
+                        <article>
                             <img src="/storage/${details.image}" alt="">
                             <div class="detail">
                                 <h1 style='font-size:1.2vw;'>${details.nom}</h1>
@@ -1274,7 +1280,7 @@
                         </article>
                         <input type="number" class="numtext"  disabled value="${details.quantity}">
                         <button onclick="removeItem(${id})" style="color:#fff;" class="rmb"><i class="fa-solid fa-trash"></i></button>
-                    
+
                     </li>
                     <hr>`;
 
@@ -1356,7 +1362,7 @@
                                 $.each(cartItems, function(id, details) {
                                     cartHtml += `
                         <li>
-                            <article> 
+                            <article>
                                 <img src="/storage/${details.image}" alt="">
                                 <div class="detail">
                                     <h1 style='font-size:1.2vw;'>${details.nom}</h1>

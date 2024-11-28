@@ -20,6 +20,12 @@
 
     <title>BE_store</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         :root {
             --huge: 6.5rem;
             --x-large: 4rem;
@@ -1176,7 +1182,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="{{ asset('Front/javascript/menu.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <script>
         const backup = document.getElementById('backup');
         const msd = document.querySelectorAll('.msd');

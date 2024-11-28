@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="Front/CSS/footer.css">
     <title>Prestation du services</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         .abs-img {
             width: 60%;
 

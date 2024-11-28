@@ -21,6 +21,12 @@
 
     <title>Nous contacter</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         #country {
             margin-right: 10px;
             font-size: 1vw;
@@ -543,7 +549,7 @@
                             <div class="review">
                                 <!--<i class="fa-solid fa-thumbs-up"></i>-->
                                 <i class="fa-regular fa-thumbs-up like"></i>
-                                
+
                                 <!--<i class="fa-solid fa-thumbs-down"></i>-->
                                 <i class="fa-regular fa-thumbs-down like"></i>
                                 <!--<i class="fa-solid fa-star"></i>

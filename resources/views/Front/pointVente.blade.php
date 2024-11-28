@@ -23,6 +23,12 @@
     <title>BANTOU-ENERGY || Vente</title>
 </head>
 <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
     @media(max-width:600px) {
         #toggle-btn {
             margin-top: -1vh !important;

@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="Front/CSS/footer.css">
     <title>Nos réalisations</title>
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         main {
             width:100vw!important;
             overflow-x: hidden!important;
@@ -553,13 +559,13 @@
             </aside>
         </section>
         <section class="parent">
-            
+
 
     <div class="div1">1</div>
     <div class="div2">2</div>
     <div class="div3">3</div>
 
-    
+
         </section>
         <h1 class="index">Parcours clients</h1>
         <section class="third">

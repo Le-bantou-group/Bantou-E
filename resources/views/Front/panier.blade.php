@@ -20,6 +20,12 @@
     <title>Panier</title>
 
     <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
         .intro {
             display: flex;
             justify-content: center;
@@ -886,7 +892,7 @@
             const debit = document.getElementById('debit');
             const paypal = document.getElementById('paypal');
             const checks = document.querySelectorAll('.check-contain .check')
-            //const ship = document.getElementById('ship'); 
+            //const ship = document.getElementById('ship');
             const addr = document.getElementById('addr');
             /* ship.addEventListener("change",function(){
                   if(ship.checked()){
@@ -982,13 +988,13 @@
                             <img src="/storage/${details.image}" alt="">
                             <div class="detail">
                                 <h1>${details.nom}</h1>
-                                
+
                                 <p class="price">${details.prix}</p>
                             </div>
-                        
+
                                 <input  style="width:40%;" disabled value="${details.quantity}">
                      <button onclick="removeItem(${id})" class="iso_btn" style="color:#fff; border:0; background:transparent;"><i class="fa-solid fa-trash"></i></button>
-                        
+
                         </li>
                         <hr>`;
                                 });
