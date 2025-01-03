@@ -1,6 +1,6 @@
 <?php
 use Laravel\Fortify\Fortify;
-use App\Http\Controllers\UserController; 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CommandeController;
@@ -112,7 +112,9 @@ Fortify::resetPasswordView(fn() => view('auth.reset-password'));
 //Gestion du dashbord
 
 Route::middleware('auth')->group(function(){
-    Route::get('Dashboard/',[FormPartenaireController::class, 'show'])->name('admin');
+    Route::middleware('admin')->group(function(){
+        Route::get('Dashboard/',[FormPartenaireController::class, 'show'])->name('admin');
+    });
 });
 //Route::get('Dashboard/',[FormPartenaireController::class, 'show'])->name('admin');
 
